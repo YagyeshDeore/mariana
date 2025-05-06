@@ -23,7 +23,6 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode
 public class Product {
     @Id
        @GeneratedValue(strategy = GenerationType.IDENTITY)

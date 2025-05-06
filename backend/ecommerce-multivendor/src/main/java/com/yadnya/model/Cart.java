@@ -22,25 +22,20 @@ import lombok.Setter;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Cart {
-   
-       @Id
-       @GeneratedValue(strategy = GenerationType.IDENTITY)
-       private long id; // Unique identifier for the cart
-   
-       private User user; // User associated with the cart
-       @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, orphanRemoval = true)
-       private Set<CartItem> cartItems = new HashSet<>(); // Set of items in the cart
-       private double totalSellingPrice; // Total selling price of the cart items
-       private int totalItem; // Total number of items in the cart
-       private int totalMrpPrice; // Total MRP price of the cart items
-       private int discount; // Total discount on the cart items
-       private String couponCode; // Coupon code applied to the cart
 
-       // private String name; // Name of the cart (e.g., "Shopping Cart")
-       // private String description; // Description of the cart
-       // private double totalAmount; // Total amount of the cart
-       // private int itemCount; // Number of items in the cart
-       // @ManyToMany(mappedBy = "carts")
-       // private Set<User> users = new HashSet<>(); // Set of users associated with the cart
-   
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id; // Unique identifier for the cart
+
+    private User user; // User associated with the cart
+    
+    @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<CartItem> cartItems = new HashSet<>(); // Set of items in the cart
+    
+    private double totalSellingPrice; // Total selling price of the cart items
+    private int totalItem; // Total number of items in the cart
+    private int totalMrpPrice; // Total MRP price of the cart items
+    private int discount; // Total discount on the cart items
+    private String couponCode; // Coupon code applied to the cart
+
 }

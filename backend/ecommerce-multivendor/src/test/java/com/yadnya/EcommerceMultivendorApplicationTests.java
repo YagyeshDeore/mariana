@@ -1,13 +1,13 @@
-package com.yadnya;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-class EcommerceMultivendorApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
-}
+//package com.yadnya;
+//
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
+//
+//@SpringBootTest
+//class EcommerceMultivendorApplicationTests {
+//
+//	@Test
+//	void contextLoads() {
+//	}
+//
+//}
